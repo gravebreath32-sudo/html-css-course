@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <tittle>My website</tittle>
+
+<style>
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    border: 2px solid black;
+    padding: 10px;
+    max-width: 900;
+    margin: auto;
+
+    justify-content: flex-end;
+    align-items: center;
+}
+.item {
+    background-color: #4caf50;
+    color: white;
+    padding:20px;
+    flex: 1;
+    text-align: center;
+    border-radius: 8px;
+    
+}
+    .box{
+        background-color: rgb(255, 0, 0);
+        padding: 20px;
+        border: 2px solid black;
+        margin: 40px auto;
+        max-width: 600px;
+        text-align: center;
+    }
+
+    .special {
+             background-color: rgb(255, 0, 0);
+    }
+
+/* Body & overall page */
+body {
+    <div class="box"
+         This is a box 
+    </div>
+    background: linear-gradient(to bottom, #f0f0f0, #d9e4f5); /* gradient background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #145fc2ff;
+    margin: 20px 0;
+}
+
+/* Paragraphs */
+p {
+    font-size: 18px;
+    color: #ff1313ff;
+    line-height: 1.6;
+    margin: 10px 0 20px 0;
+}
+
+/* Image styling */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Links */
+a {
+    color: #32e81aff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #a17c0cff;
+}
+
+/* Buttons */
+button {
+    background-color: #dee81aff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #0c92a1ff;
+    transform: scale(1.05);
+}
+
+/* Responsive text & images */
+@media only screen and (max-width: 600px) {
+    h1, h2, h3 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    img {
+        max-width: 95%;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    .item {
+        bakcground-color: orange;
+    }
+}
+</style>
+
+</head>
+<body>
+
+    <h1>Hello World 🌍</h1>
+    <p>Main HTML seekh raha hoon</p>
+
+    <h2>My Profile</h2>
+    <img src="arman.png" alt="arman ki photo" width="200">
+
+    <h3>My Goals</h3>
+    <p>HTML, CSS aur JavaScript seekhna</p>
+
+    <a href="https://www.google.com">Google kholo</a>
+    <br><br>
+    <button>Contact Me</button>
+
+    <hr>
+
+<div class="box">
+    Box One
+</div>
+
+<div class="box special">
+    Box Two
+</div>
+
+<hr>
+
+<div class="flex-container">
+    <div class="item">one</div>
+    <div class="item">two</div>
+    <div class="item">three</div>
+</div>
+
+</body>
+</html>
