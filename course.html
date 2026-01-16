@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <tittle>The Learner</tittle>
+
+<style> body {
+    background: rgb(255, 255, 255);
+}
+    
+    .navbar {
+        postion: scroll;
+        top: 0;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        background-color: #111;
+        padding: 15px 30px;
+        max-width: 100%
+    }
+
+    .menu-icon {
+        color: white;
+        font-size: 28px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .logo {
+        color: rgb(255, 0, 0);
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links li a.active {
+        color: green;
+        text-decoration: none;
+        font-size: 18px;
+        border-bottom: 2px solid green;
+    }
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    border: 2px solid black;
+    padding: 10px;
+    max-width: 900;
+    margin: auto;
+
+    justify-content: flex-end;
+    align-items: center;
+}
+.item {
+    background-color: #4caf50;
+    color: white;
+    padding:20px;
+    flex: 1;
+    text-align: center;
+    border-radius: 8px;
+    
+}
+    .box{
+        background-color: rgb(255, 0, 0);
+        padding: 20px;
+        border: 2px solid black;
+        margin: 40px auto;
+        max-width: 600px;
+        text-align: center;
+    }
+
+    .special {
+             background-color: rgb(255, 0, 0);
+    }
+
+/* Body & overall page */
+body {
+    <div class="box"
+         This is a box 
+    </div>
+    background: linear-gradient(to bottom, #f0f0f0, #d9e4f5); /* gradient background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #145fc2ff;
+    margin: 20px 0;
+}
+
+/* Paragraphs */
+p {
+    font-size: 18px;
+    color: #ff1313ff;
+    line-height: 1.6;
+    margin: 10px 0 20px 0;
+}
+
+/* Image styling */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Links */
+a {
+    color: #32e81aff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #a17c0cff;
+}
+
+/* Buttons */
+button {
+    background-color: #dee81aff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #0c92a1ff;
+    transform: scale(1.05);
+}
+
+/* Responsive text & images */
+@media only screen and (max-width: 600px) {
+    h1, h2, h3 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    img {
+        max-width: 95%;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    .item {
+        background-color: orange;
+    }
+}
+
+@media (max-width: 600px) {
+  .menu-icon {
+    display: block;  
+  }
+
+  .nav-links {
+    display: none;    
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+.nav-links.show {
+    display: flex;
+}
+
+</style>
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">arman</div>
+
+        <div class="menu-icon">☰</div>
+
+        <ul class="nav-links">
+            <li><a href="#" class="active">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>Hello World 🌍</h1>
+    <p>I am the Learner and I will Learn till my death</p>
+
+    <h2>About Me</h2>
+    <img src="me.png" alt="try thinking" width="200">
+
+    <h3>My Goals</h3>
+    <p>Become a Developer and Develop the World</p>
+
+    <a href="https://www.google.com">Enter the Fantasy</a>
+    <br><br>
+    <button>Contact Me</button>
+
+    <hr>
+
+<div class="box">
+    contact any time 
+</div>
+
+<div class="box special">
+    but don't contact everytime
+</div>
+
+<hr>
+
+<div class="flex-container">
+    <div class="item">by Arman Sangha</div>
+    <div class="item">the Great</div>
+    <div class="item">the Developer</div>
+</div>
+
+<script>
+    const menuIcon = document.querySelector('.menu-icon');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuIcon.addEventListener('click, () =>'{
+        navLinks.classList.toogle('show');
+    });
+</script>
+
+</body>
+</html>
